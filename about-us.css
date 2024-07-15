@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #7f49ec;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.about-us {
+    padding: 2rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+footer {
+    background-color: #7f49ec;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 30px;
+}
