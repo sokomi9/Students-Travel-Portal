@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #7f49ec;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    padding-right: 30px;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.report-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.report-section h2 {
+    margin-top: 0;
+}
+
+.report-content {
+    margin-top: 10px;
+}
+
+.ad-management {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.ad-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.ad-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.ad-form input[type="text"], 
+.ad-form textarea,
+.ad-form input[type="file"] {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.ad-form button {
+    margin-top: 10px;
+    background-color: #7f49ec;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ad-form button:hover {
+    background-color: #5a2c9b;
+}
+
+.pending-ads {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #87CEEB;
+    color: #000;
+    text-align: center;
+    padding: 1rem 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+}

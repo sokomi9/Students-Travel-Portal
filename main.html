@@ -1,45 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Travel Portal</title>
-    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="main.css">
 </head>
-<>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Bar</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+<body>
     <nav class="navbar">
         <div class="logo">
-            <img src="images/logo.PNG" alt="">
+            <img src="images/logo.PNG" alt="Logo">
         </div>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            &#9776;
+        </button>
         <ul class="nav-links">
             <li><a href="main.html">HOME</a></li>
-            <li><a href="advertisement.html">ADVERTISEMENT</a></li>
-            <li><a href="about-us.html">ABOUT US</a></li>
-            <li><a href="offers.html">OFFERS</a></li>
-            <li><a href="login.html">LOGIN</a></li>
-            <li><a href="signup.html">SIGN UP</a></li>
+            <li><a href="advertisement.html" target="_blank">ADVERTISEMENT</a></li>
+            <li><a href="about-us.html" target="_blank">ABOUT US</a></li>
+            <li><a href="offers.html" target="_blank">OFFERS</a></li>
+            <li><a href="login.html" target="_blank">LOGIN</a></li>
+            <li><a href="signup.html" target="_blank">SIGN UP</a></li>
+            <li><a href="staff-portal-login.html" target="_blank">STAFF PORTAL LOGIN</a></li>
         </ul>
     </nav>
-</html>
 
     <div class="container">
         <div class="upper">
+            
+    
             <header>
                 <h1 class="welcome">Welcome to Student Travel Portal</h1>
             </header>
-            
+    
             <section class="search-section">
                 <h2>Search Flights</h2>
-                <form action="#" method="GET">
+                <form action="#" method="GET" id="search-form">
                     <label for="from">From:</label>
                     <input type="text" id="from" name="from" placeholder="Departure city">
                     
@@ -59,107 +55,102 @@
                 </form>
             </section>
     
-            <section id="flight-results">
+            <section class="flight-results" id="flight-results">
                 <h2>Flight Results</h2>
-                <div class="flight-selection">
-                    <label for="from-destination">From:</label>
-                    <select id="from-destination" name="from-destination">
-                        <option value="Berlin">Berlin</option>
-                        <option value="Cape Town">Cape Town</option>
-                        <option value="Los Angeles">Los Angeles</option>
-                        <option value="Lagos">Lagos</option>
-                        <option value="Paris">Paris</option>
-                        <option value="New York">New York</option>
-                    </select>
-            
-                    <label for="to-destination">To:</label>
-                    <select id="to-destination" name="to-destination">
-                        <option value="Berlin">Berlin</option>
-                        <option value="Cape Town">Cape Town</option>
-                        <option value="Los Angeles">Los Angeles</option>
-                        <option value="Lagos">Lagos</option>
-                        <option value="Paris">Paris</option>
-                        <option value="New York">New York</option>
-                    </select>
+                <div class="results-list">
+                    <!-- Flight results will be dynamically added here -->
+                    <p>Select a flight to see more details.</p>
                 </div>
-                <div class="flight-listing">
-                    <h3>Flight from <span id="from-city">City A</span> to <span id="to-city">City B</span></h3>
-                    <p>Duration: 2h 30m | Layover: 1h</p>
-                    <p>Baggage Allowance: 1 carry-on + 1 personal item</p>
-                    <p>Cancellation Policy: Flexible cancellation with fees</p>
-                    <p>In-flight Services: Wi-Fi available, meals included</p>
-                    <button>Select Flight</button>
-                </div>
-                <!-- Additional flight listings would be dynamically generated here -->
             </section>
-            
-            <script>
-                document.getElementById('from-destination').addEventListener('change', function() {
-                    document.getElementById('from-city').textContent = this.value;
-                });
-            
-                document.getElementById('to-destination').addEventListener('change', function() {
-                    document.getElementById('to-city').textContent = this.value;
-                });
-            </script>
         </div>
+        <section class="advertisements">
             <h2>Advertisements</h2>
             <div class="advertisement-grid">
-            <div class="advertisement">
-                <img src="images/Berlin.webp" alt="Berlin" class="advertisement-images">
-                <p>Explore Berlin with our exclusive student discount package!</p>
-                <button>Learn More</button>
-            </div><div class="advertisement">
-                <img src="images/Cape Town.webp" alt="Cape Town" class="advertisement-images">
-                <p>Explore Cape Town with our exclusive student discount package!</p>
-                <button>Learn More</button>
-            </div><div class="advertisement">
-                <img src="images/Los Angeles.webp" alt="Los Angeles" class="advertisement-images">
-                <p>Explore Los Angeles with our exclusive student discount package!</p>
-                <button>Learn More</button>
-            </div><div class="advertisement">
-                <img src="images/Lagos.webp" alt="Lagos" class="advertisement-images">
-                <p>Explore Lagos with our exclusive student discount package!</p>
-                <button>Learn More</button>
-            </div><div class="advertisement">
-                <img src="images/Paris.webp" alt="Paris" class="advertisement-images">
-                <p>Explore Paris with our exclusive student discount package!</p>
-                <button>Learn More</button>
-            </div><div class="advertisement">
-                <img src="images/New York.webp" alt="New York" class="advertisement-images">
-                <p>Explore New York with our exclusive student discount package!</p>
-                <button>Learn More</button>
+                <div class="advertisement">
+                    <img src="images/Berlin.webp" alt="Berlin" class="advertisement-images">
+                    <p>Explore Berlin with our exclusive student discount package!</p>
+                    <button><a href="advertisement.html">Learn More</a></button>
+                </div>
+                <div class="advertisement">
+                    <img src="images/Cape Town.webp" alt="Cape Town" class="advertisement-images">
+                    <p>Explore Cape Town with our exclusive student discount package!</p>
+                    <button><a href="advertisement.html">Learn More</a></button>
+                </div>
+                <div class="advertisement">
+                    <img src="images/Los Angeles.webp" alt="Los Angeles" class="advertisement-images">
+                    <p>Explore Los Angeles with our exclusive student discount package!</p>
+                    <button><a href="advertisement.html">Learn More</a></button>                </div>
+                <div class="advertisement">
+                    <img src="images/Lagos.webp" alt="Lagos" class="advertisement-images">
+                    <p>Explore Lagos with our exclusive student discount package!</p>
+                    <button><a href="advertisement.html">Learn More</a></button>                </div>
+                <div class="advertisement">
+                    <img src="images/Paris.webp" alt="Paris" class="advertisement-images">
+                    <p>Explore Paris with our exclusive student discount package!</p>
+                    <button><a href="advertisement.html">Learn More</a></button>                </div>
+                <div class="advertisement">
+                    <img src="images/New York.webp" alt="New York" class="advertisement-images">
+                    <p>Explore New York with our exclusive student discount package!</p>
+                    <button><a href="advertisement.html">Learn More</a></button>                </div>
             </div>
-        </div>
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Media Icons</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
-</body>
-</html>
- </div>
- <footer>
-    <div class="social-media">
-        <a href="https://www.facebook.com" target="_blank" class="icon">
-            <img src="images/facebook.png" alt="Facebook">
-        </a>
-        <a href="https://www.twitter.com" target="_blank" class="icon">
-            <img src="images/X.jpeg" alt="X">
-        </a>
-        <a href="https://www.linkedin.com" target="_blank" class="icon">
-            <img src="images/linkedin.webp" alt="LinkedIn">
-        </a>
-        <a href="https://www.instagram.com" target="_blank" class="icon">
-            <img src="images/ig.png" alt="Instagram">
-        </a>
+        </section>
     </div>
-    <p class="footer">&copy; 2024 Student Travel Portal. All rights reserved.</p>
-</footer>
+
+    <footer>
+        <p class="follow-us">Follow us on:</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank" class="icon">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="icon">
+                <img src="images/X.PNG" alt="X">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="icon">
+                <img src="images/linkedin.webp" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="icon">
+                <img src="images/ig.png" alt="Instagram">
+            </a>
+        </div>
+        <p class="footer">&copy; 2024 Student Travel Portal. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('search-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const resultsSection = document.getElementById('flight-results');
+            const resultsList = resultsSection.querySelector('.results-list');
+            
+            // Clear previous results
+            resultsList.innerHTML = '';
+
+            // Simulated flight data
+            const flights = [
+                {
+                    from: document.getElementById('from').value,
+                    to: document.getElementById('to').value,
+                    date: document.getElementById('date').value,
+                    class: document.getElementById('class').value
+                }
+                // Add more flight data here
+            ];
+
+            flights.forEach(flight => {
+                const flightDiv = document.createElement('div');
+                flightDiv.classList.add('flight-item');
+                flightDiv.innerHTML = `
+                    <h3>Flight from ${flight.from} to ${flight.to}</h3>
+                    <p>Date: ${flight.date}</p>
+                    <p>Class: ${flight.class}</p>
+                    <button>Book Now</button>
+                `;
+                resultsList.appendChild(flightDiv);
+            });
+        });
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
+
+    </script>
 </body>
 </html>

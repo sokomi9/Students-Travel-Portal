@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Portal</title>
+    <link rel="stylesheet" href="staff-portal.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.PNG" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="main.html">HOME</a></li>
+            <li><a href="logout.html">LOG OUT</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Staff Portal</h1>
+        </header>
+
+        <section class="report-section">
+            <h2>User Demographic Report</h2>
+            <div class="report-content">
+                <p>Age, Gender, University and College Identification, Program of Study, and Origin and Destination of Travel.</p>
+                <!-- Placeholder for report data -->
+            </div>
+        </section>
+
+        <section class="report-section">
+            <h2>User Engagement Report</h2>
+            <div class="report-content">
+                <p>Percentage of user engagement, time spent per page, click-through rates, FAQs, and direct inquiries.</p>
+                <!-- Placeholder for report data -->
+            </div>
+        </section>
+
+        <section class="report-section">
+            <h2>Advertisement Performance Report</h2>
+            <div class="report-content">
+                <p>Number of views, customer demographics, clicks, inquiries, and bookings through advertisements.</p>
+                <!-- Placeholder for report data -->
+            </div>
+        </section>
+
+        <section class="report-section">
+            <h2>Revenue and Profitability Report</h2>
+            <div class="report-content">
+                <p>Revenue from advertisements, bookings, and other income sources, cost breakdown, and overall profitability.</p>
+                <!-- Placeholder for report data -->
+            </div>
+        </section>
+
+        <section class="ad-management">
+            <h2>Advertisement Management</h2>
+            <form action="#" method="POST" class="ad-form">
+                <h3>Create/Modify Advertisement</h3>
+                <label for="ad-title">Advertisement Title:</label>
+                <input type="text" id="ad-title" name="ad-title" required>
+
+                <label for="ad-content">Advertisement Content:</label>
+                <textarea id="ad-content" name="ad-content" rows="4" required></textarea>
+
+                <label for="ad-image">Advertisement Image:</label>
+                <input type="file" id="ad-image" name="ad-image" accept="image/*">
+
+                <button type="submit">Submit Advertisement</button>
+            </form>
+
+            <h3>Pending Advertisements</h3>
+            <div class="pending-ads">
+                <!-- Placeholder for pending ads list -->
+                <p>No pending advertisements.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p class="footer">&copy; 2024 Student Travel Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

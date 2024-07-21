@@ -3,9 +3,10 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #f4f4f4;
 }
 
@@ -16,6 +17,7 @@ body {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .signup-form {
@@ -37,11 +39,13 @@ body {
     margin-bottom: 5px;
 }
 
-.input-group input {
+.input-group input,
+.input-group select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 button {
@@ -59,12 +63,45 @@ button {
 button:hover {
     background-color: #5f37cc;
 }
-footer {
+.profile-upload form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-upload label {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.profile-upload input[type="file"] {
+    margin-bottom: 10px;
+}
+
+.profile-upload button {
     background-color: #7f49ec;
-    color: #fff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    width: 100px;
+}
+
+.profile-upload button:hover {
+    background-color: #5a2c9b;
+}
+
+
+footer {
+    background-color: #87CEEB;
+    color: #000000;
     text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
+    padding: 10px 0;
     width: 100%;
-    margin-top: 50px;}
+    box-sizing: border-box;
+    position: relative;
+    margin-top: auto;
+}
